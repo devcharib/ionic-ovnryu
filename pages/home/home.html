@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Numero 1:</ion-label>
+    <ion-input placeholder="Numero1" [(ngModel)]="numero1" name="numero1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Numero 2:</ion-label>
+    <ion-input placeholder="Numero2" [(ngModel)]="numero2" name="numero2"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Resultado:  {{resultado}} </ion-label>
+    
+  </ion-item>
+  <button type="submit" (click)="Soma()">Calcular</button>
+</ion-content>
